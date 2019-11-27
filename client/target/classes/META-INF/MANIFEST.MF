@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Implementation-Title: DB Cobrand Info - Client
+Implementation-Version: 1.0.1.RELEASE
+Built-By: wupadhyay
+Implementation-Vendor-Id: com.yodlee.iae.commons
+Build-Jdk: 1.8.0_101
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/tools-starter-parent/dbcobrandinfo-parent/dbcobrand
+ info-client
+Created-By: Maven Integration for Eclipse
+

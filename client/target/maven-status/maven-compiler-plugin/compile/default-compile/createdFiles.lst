@@ -1,0 +1,8 @@
+com\yodlee\iae\commons\dbcobrandinfo\client\DefaultDBCobrandInfoFetcher.class
+com\yodlee\iae\commons\dbcobrandinfo\client\cache\DefaultCobrandCacheManager.class
+com\yodlee\iae\commons\dbcobrandinfo\client\cache\DefaultCobrandDetailsFetcher.class
+com\yodlee\iae\commons\dbcobrandinfo\client\scheduler\ClientCacheScheduler.class
+com\yodlee\iae\commons\dbcobrandinfo\client\DBCobrandInfoFetcher.class
+com\yodlee\iae\commons\dbcobrandinfo\client\provider\DBCobrandInfoProvider.class
+com\yodlee\iae\commons\dbcobrandinfo\client\cache\DBInfoCache.class
+com\yodlee\iae\commons\dbcobrandinfo\client\config\OLTPDBConfig.class

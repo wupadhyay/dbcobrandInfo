@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jboss-deployment-structure>
+  <deployment>
+    <exclusions>
+      <module
+        name="com.fasterxml.jackson.core.jackson-annotations" />
+      <module name="com.fasterxml.jackson.core.jackson-core" />
+      <module name="com.fasterxml.jackson.core.jackson-databind" />
+      <module
+        name="com.fasterxml.jackson.jaxrs.jackson-jaxrs-json-provider" />
+      <module
+        name="org.jboss.resteasy.resteasy-jackson2-provider" />
+    </exclusions>
+
+    <!-- exclude-subsystem prevents a subsystems deployment unit processors
+      running on a deployment which gives basically the same effect as removing
+      the subsystem, but it only affects single deployment -->
+    <exclude-subsystems>
+      <subsystem name="logging" />
+    </exclude-subsystems>
+  </deployment>
+</jboss-deployment-structure>

@@ -1,0 +1,6 @@
+com\yodlee\iae\commons\dbcobrandinfo\model\lookup\CobrandStatus.class
+com\yodlee\iae\commons\dbcobrandinfo\model\lookup\Environment.class
+com\yodlee\iae\commons\dbcobrandinfo\model\lookup\DataCenter.class
+com\yodlee\iae\commons\dbcobrandinfo\model\response\CobrandInfo.class
+com\yodlee\iae\commons\dbcobrandinfo\model\response\EnvironmentInfo.class
+com\yodlee\iae\commons\dbcobrandinfo\model\response\DBInfo.class

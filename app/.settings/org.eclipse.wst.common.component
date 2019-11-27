@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="dbcobrandinfo-1.0.1.RELEASE">
+        <wb-resource deploy-path="/" source-path="/target/m2e-wtp/web-resources"/>
+        <wb-resource deploy-path="/" source-path="/src/main/webapp" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/.apt_generated"/>
+        <dependent-module archiveName="com.yodlee.iae.framework-framework-app-2.0.1.RELEASE.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/framework-app/framework-app">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="com.yodlee.iae.framework-framework-sdk-2.0.1.RELEASE.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/framework-sdk/framework-sdk">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="com.yodlee.iae.framework-framework-vo-2.0.1.RELEASE.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/framework-vo/framework-vo">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="com.yodlee.iae.commons-dbcobrandinfo-sdk-1.0.1.RELEASE.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/dbcobrandinfo-sdk/dbcobrandinfo-sdk">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="com.yodlee.iae.framework-framework-entities-2.0.1.RELEASE.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/framework-entities/framework-entities">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <property name="context-root" value="dbcobrandinfo-1.0.1.RELEASE"/>
+        <property name="java-output-path" value="/dbcobrandinfo-app/target/classes"/>
+    </wb-module>
+</project-modules>

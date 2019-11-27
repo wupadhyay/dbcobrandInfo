@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [dbcobrandinfo-app by packages]">
+  <test name="com.yodlee.iae.commons.dbcobrandinfo.dbfetcher.test(failed)">
+    <classes>
+      <class name="com.yodlee.iae.commons.dbcobrandinfo.dbfetcher.test.SRDBDataServiceTest">
+        <methods>
+          <include name="testgetDataFromSRDB"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestMethod"/>
+        </methods>
+      </class> <!-- com.yodlee.iae.commons.dbcobrandinfo.dbfetcher.test.SRDBDataServiceTest -->
+      <class name="com.yodlee.iae.commons.dbcobrandinfo.dbfetcher.test.CobrandSiteHandlerTest">
+        <methods>
+          <include name="TestCobMap"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="testResultMapReverser"/>
+          <include name="springTestContextAfterTestMethod"/>
+        </methods>
+      </class> <!-- com.yodlee.iae.commons.dbcobrandinfo.dbfetcher.test.CobrandSiteHandlerTest -->
+      <class name="com.yodlee.iae.commons.dbcobrandinfo.dbfetcher.test.CobrandContainerHandlerTest">
+        <methods>
+          <include name="testTagMapper"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="testDisabledContainer"/>
+          <include name="testCobrandEnabledContainerMapper"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="testCobProductIdMap"/>
+          <include name="testCobrandToAllContainerMapper"/>
+          <include name="springTestContextAfterTestMethod"/>
+        </methods>
+      </class> <!-- com.yodlee.iae.commons.dbcobrandinfo.dbfetcher.test.CobrandContainerHandlerTest -->
+      <class name="com.yodlee.iae.commons.dbcobrandinfo.dbfetcher.test.RedisServiceTest">
+        <methods>
+          <include name="testCobrandDataCaching"/>
+          <include name="testSiteDataCaching"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestMethod"/>
+        </methods>
+      </class> <!-- com.yodlee.iae.commons.dbcobrandinfo.dbfetcher.test.RedisServiceTest -->
+    </classes>
+  </test> <!-- com.yodlee.iae.commons.dbcobrandinfo.dbfetcher.test(failed) -->
+</suite> <!-- Failed suite [dbcobrandinfo-app by packages] -->

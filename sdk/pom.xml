@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Licensed to the Yodlee Infotech Private Limited
+
+  Maven configuration for DBCobrandInfo SDK
+
+  @Date May, 2018
+  @Authour Sundhara Raja Perumal .S (sperumal@yodlee.com)
+-->
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>com.yodlee.iae.commons</groupId>
+    <artifactId>dbcobrandinfo-parent</artifactId>
+    <version>1.0.1.RELEASE</version>
+  </parent>
+
+  <artifactId>dbcobrandinfo-sdk</artifactId>
+  <name>DB Cobrand Info - SDK</name>
+  <description>DB Cobrand Info SDK API</description>
+  <packaging>jar</packaging>
+
+  <properties>
+    <oracle.version>11.2.0.3</oracle.version>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>com.yodlee.iae.framework</groupId>
+      <artifactId>framework-sdk</artifactId>
+      <version>2.0.1.RELEASE</version>
+    </dependency>
+
+    <dependency>
+      <groupId>com.yodlee.iae.commons</groupId>
+      <artifactId>dbcobrandinfo-vo</artifactId>
+      <version>1.0.1.RELEASE</version>
+    </dependency>
+
+    <dependency>
+      <groupId>com.yodlee.tools.commons</groupId>
+      <artifactId>crypto</artifactId>
+      <version>111.0</version>
+    </dependency>
+
+    <dependency>
+      <groupId>oracle</groupId>
+      <artifactId>ojdbc6</artifactId>
+      <version>${oracle.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-data-jpa</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>org.hibernate</groupId>
+      <artifactId>hibernate-c3p0</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>org.hibernate</groupId>
+      <artifactId>hibernate-core</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>org.hibernate</groupId>
+      <artifactId>hibernate-entitymanager</artifactId>
+    </dependency>
+  </dependencies>
+</project>

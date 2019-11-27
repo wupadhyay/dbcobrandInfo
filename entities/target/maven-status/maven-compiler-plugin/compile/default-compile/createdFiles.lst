@@ -1,0 +1,4 @@
+com\yodlee\iae\commons\dbcobrandinfo\entities\adt\BaseADTEntity.class
+com\yodlee\iae\commons\dbcobrandinfo\entities\adt\DBDescriptor.class
+com\yodlee\iae\commons\dbcobrandinfo\entities\adt\DataCenter.class
+com\yodlee\iae\commons\dbcobrandinfo\entities\adt\Environment.class

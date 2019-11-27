@@ -1,0 +1,6 @@
+com\yodlee\iae\commons\dbcobrandinfo\client\test\dao\CacheInfoDAO.class
+com\yodlee\iae\commons\dbcobrandinfo\client\test\repository\CacheInfoRepository.class
+com\yodlee\iae\commons\dbcobrandinfo\client\test\entities\SumInfo.class
+com\yodlee\iae\commons\dbcobrandinfo\client\test\entities\CacheInfo.class
+com\yodlee\iae\commons\dbcobrandinfo\client\test\DBQueryExecutorTest.class
+com\yodlee\iae\commons\dbcobrandinfo\client\test\DBInfoFetcherTest.class

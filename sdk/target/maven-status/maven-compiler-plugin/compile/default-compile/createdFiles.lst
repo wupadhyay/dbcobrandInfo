@@ -1,0 +1,13 @@
+com\yodlee\iae\commons\dbcobrandinfo\cache\CobrandCache.class
+com\yodlee\iae\commons\dbcobrandinfo\cache\CustomBeanPropertyRowMapper.class
+com\yodlee\iae\commons\dbcobrandinfo\condition\ConditionalOnOLTPConnectionCacheEnabled.class
+com\yodlee\iae\commons\dbcobrandinfo\datasource\DBContext.class
+com\yodlee\iae\commons\dbcobrandinfo\config\DBConnectionValidator.class
+com\yodlee\iae\commons\dbcobrandinfo\jpa\OLTPJPAConfig.class
+com\yodlee\iae\commons\dbcobrandinfo\condition\ConditionalOnCobrandCacheEnabled.class
+com\yodlee\iae\commons\dbcobrandinfo\datasource\ContextInfo.class
+com\yodlee\iae\commons\dbcobrandinfo\datasource\MultiDataSource.class
+com\yodlee\iae\commons\dbcobrandinfo\jpa\AbstractJPAConfig.class
+com\yodlee\iae\commons\dbcobrandinfo\cache\AbstractCobrandCache.class
+com\yodlee\iae\commons\dbcobrandinfo\cache\CobrandDetailsFetcher.class
+com\yodlee\iae\commons\dbcobrandinfo\web\ServiceRoutes.class

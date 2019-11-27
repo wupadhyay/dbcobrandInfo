@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Licensed to the Yodlee Infotech Private Limited Maven configuration 
+	for DBCobrandInfo APP @Date Apr, 2018 @Authour Sundhara Raja Perumal .S (sperumal@yodlee.com) -->
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>com.yodlee.iae.commons</groupId>
+		<artifactId>dbcobrandinfo-parent</artifactId>
+		<version>1.0.1.RELEASE</version>
+	</parent>
+
+	<artifactId>dbcobrandinfo-app</artifactId>
+	<name>DB Cobrand Info - App</name>
+	<description>DB Cobrand Info App API's</description>
+	<packaging>war</packaging>
+
+	<properties>
+		<war.finalName>dbcobrandinfo-${version}</war.finalName>
+	</properties>
+
+	<dependencies>
+		<!-- provided dependencies -->
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>javax.servlet-api</artifactId>
+			<scope>provided</scope>
+		</dependency>
+
+
+		<dependency>
+			<groupId>javax.servlet.jsp</groupId>
+			<artifactId>javax.servlet.jsp-api</artifactId>
+			<version>${jsp.version}</version>
+			<scope>provided</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>com.yodlee.iae.framework</groupId>
+			<artifactId>framework-app</artifactId>
+			<version>2.0.1.RELEASE</version>
+		</dependency>
+		<dependency>
+			<groupId>org.codehaus.jackson</groupId>
+			<artifactId>jackson-mapper-asl</artifactId>
+			<version>1.5.0</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>com.yodlee.iae.framework</groupId>
+			<artifactId>framework-app</artifactId>
+			<version>2.0.1.RELEASE</version>
+			<classifier>tests</classifier>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<version>6.8.7</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.12</version>
+			<scope>test</scope>
+
+		</dependency>
+		<dependency>
+			<groupId>org.mockito</groupId>
+			<artifactId>mockito-core</artifactId>
+			<version>1.10.19</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.yodlee.iae.framework</groupId>
+			<artifactId>framework-unittest</artifactId>
+			<version>2.0.1.RELEASE</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.google.code.gson</groupId>
+			<artifactId>gson</artifactId>
+			<version>2.8.5</version>
+			<scope>compile</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.yodlee.iae.commons</groupId>
+			<artifactId>dbcobrandinfo-sdk</artifactId>
+			<version>1.0.1.RELEASE</version>
+		</dependency>
+		<dependency>
+			<groupId>com.yodlee.iae.commons</groupId>
+			<artifactId>dbcobrandinfo-entities</artifactId>
+			<version>1.0.1.RELEASE</version>
+		</dependency>
+		<dependency>
+		<groupId>com.yodlee.iae.commons.iae-kcache</groupId>
+		<artifactId>iae-kcache-core</artifactId>
+		<version>0.0.1.43</version>
+		</dependency>
+		<dependency>
+    <groupId>org.jodd</groupId>
+    <artifactId>jodd-bean</artifactId>
+    <version>5.0.10</version>
+</dependency>
+		<dependency>
+		<groupId>com.yodlee.mel</groupId>
+			<artifactId>mel-core</artifactId>
+			<version>0.0.1.25</version>
+			<exclusions>
+				<exclusion>
+					<groupId>org.slf4j</groupId>
+					<artifactId>slf4j-log4j12</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>log4j</groupId>
+					<artifactId>log4j</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+	</dependencies>
+</project>

@@ -1,0 +1,853 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+                        http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.0.xsd">
+
+	<util:map id="testData">
+		<entry key="testCobrandData">
+			<value>
+				<![CDATA[
+
+						  
+				    ]]>
+
+			</value>
+		</entry>
+		<entry key="testSiteData">
+			<value>
+				<![CDATA[
+						 {
+    "siteId" : "21782",
+    "siteName" : "EvenskyKatzFoldes",
+    "metaContainer" : null,
+    "cobrandList" : [ {
+      "cobrandId" : 2,
+      "cobrandName" : "ASP Channel"
+    }, {
+      "cobrandId" : 5,
+      "cobrandName" : "MyChannel"
+    }, {
+      "cobrandId" : 6,
+      "cobrandName" : "sdgchannel"
+    }, {
+      "cobrandId" : 20000001,
+      "cobrandName" : "Advisor SSO Cobrand"
+    }, {
+      "cobrandId" : 20000002,
+      "cobrandName" : "Quick Start"
+    }, {
+      "cobrandId" : 99,
+      "cobrandName" : "Yodlee Demo"
+    }, {
+      "cobrandId" : 10018556,
+      "cobrandName" : "ycc_US_YI_REST_MASTER"
+    } ],
+    "siteLocale" : [ {
+      "isPrimary" : "true",
+      "value" : "UNITED STATES(EN)"
+    } ]
+  }
+						 
+						 
+				    ]]>
+			</value>
+		</entry>
+		<entry key="testCobrandSiteHandler">
+			<value>
+				<![CDATA[
+						 {
+    "test":[{
+    "cobrandId":2,
+    "cobrandName":"ASP Channel",
+    "sumInfoId":"9203",
+    "status":"1",
+    "siteId":"524",
+    "siteName":"U.S. Bank",
+    "tag":"loans",
+    "tagId":21,
+    "sitePrimaryLocale":"1"
+    },{
+    "cobrandId":2,
+    "cobrandName":"ASP Channel",
+    "sumInfoId":"420",
+    "status":"1",
+    "siteId":"396",
+    "siteName":"Cosmopolitan",
+    "tag":"news",
+    "tagId":3,
+    "sitePrimaryLocale":"1"
+    },{
+    "cobrandId":2,
+    "cobrandName":"ASP Channel",
+    "sumInfoId":"403",
+    "status":"1",
+    "siteId":"379",
+    "siteName":"dmusic.com",
+    "tag":"news",
+    "tagId":3,
+    "sitePrimaryLocale":"1"
+    },
+    {
+		"cobrandId": 1,
+		"cobrandName": "Yodlee",
+		"sumInfoId": "10164",
+		"status": "1",
+		"siteId": "8013",
+		"siteName": "CastleBank",
+		"tag": "bank",
+		"tagId": 5,
+		"sitePrimaryLocale": "1"
+	},
+	{
+		"cobrandId": 1,
+		"cobrandName": "Yodlee",
+		"sumInfoId": "3289",
+		"status": "1",
+		"siteId": "3125",
+		"siteName": "TDAmeritradeBank",
+		"tag": "bank",
+		"tagId": 5,
+		"sitePrimaryLocale": "1"
+	},
+	{
+		"cobrandId": 1,
+		"cobrandName": "Yodlee",
+		"sumInfoId": "10161",
+		"status": "1",
+		"siteId": "8011",
+		"siteName": "BankofRichmond",
+		"tag": "bank",
+		"tagId": 5,
+		"sitePrimaryLocale": "1"
+	},
+	{
+		"cobrandId": 1,
+		"cobrandName": "Yodlee",
+		"sumInfoId": "3287",
+		"status": "1",
+		"siteId": "3124",
+		"siteName": "GreaterCommunityBank",
+		"tag": "bank",
+		"tagId": 5,
+		"sitePrimaryLocale": "1"
+	},
+	{
+		"cobrandId": 1,
+		"cobrandName": "Yodlee",
+		"sumInfoId": "10160",
+		"status": "1",
+		"siteId": "8010",
+		"siteName": "MyBank(NM)",
+		"tag": "bank",
+		"tagId": 5,
+		"sitePrimaryLocale": "1"
+	}
+    ]
+  }
+						 
+						 
+				    ]]>
+			</value>
+		</entry>
+		
+		<entry key="testSitetoCobrandHandler">
+			<value>
+				<![CDATA[
+						 {
+    "test":[{
+		"siteId": "1",
+		"cobrands": "1,2,323,22222222"
+	},
+	{
+		"siteId": "2",
+		"cobrands": "1,2,5,6,323,10018556,20000001,20000002"
+	},
+	{
+		"siteId": "3",
+		"cobrands": "1,2,5,6,323,10018556,20000001,20000002,22222222"
+	},
+	{
+		"siteId": "4",
+		"cobrands": "1,2,5,6,323,10018556,20000001,20000002"
+	},
+	{
+		"siteId": "5",
+		"cobrands": "1,2,99,323,10005568,10018556,20000001,201512152,2015121214,2015121215,2015121401,2015121501,30130005422"
+	},
+	{
+		"siteId": "7",
+		"cobrands": "1,323,22222222"
+	},
+	{
+		"siteId": "8",
+		"cobrands": "1,323,10018556,20000001,22222222"
+	},
+	{
+		"siteId": "10",
+		"cobrands": "1,2,323,10018556,20000001,22222222"
+	},
+	{
+		"siteId": "11",
+		"cobrands": "1,2,5,6,99,323,10018556,20000001,20000002"
+	},
+	{
+		"siteId": "12",
+		"cobrands": "1,2,5,6,323,10018556,20000001,22222222"
+	},
+	{
+		"siteId": "13",
+		"cobrands": "1,323,10018556,20000001,22222222"
+	},
+	{
+		"siteId": "14",
+		"cobrands": "1,323,22222222"
+	},
+	{
+		"siteId": "15",
+		"cobrands": "1,2,5,6,99,323,10000004,10018556,20000001,20000002,22222222"
+	},
+	{
+		"siteId": "16",
+		"cobrands": "323,10018556,20000001,22222222"
+	},
+	{
+		"siteId": "17",
+		"cobrands": "1,2,5,6,323,10018556,20000001,20000002"
+	},
+	{
+		"siteId": "18",
+		"cobrands": "323,10018556,20000001,22222222,30003950"
+	},
+	{
+		"siteId": "19",
+		"cobrands": "1,323,20000001,22222222"
+	},
+	{
+		"siteId": "20",
+		"cobrands": "1,10000004,10018556,20000001,22222222"
+	}
+    ]
+  }
+						 
+						 
+				    ]]>
+			</value>
+		</entry>
+		<entry key="testSiteLocale">
+			<value>
+				<![CDATA[
+						 {
+    "test":[{
+		"siteId": "1",
+		"locale_id": "1",
+		"language": "EN",
+		"country": "UNITED STATES"
+	},
+	{
+		"siteId": "1",
+		"locale_id": "50",
+		"language": "EN",
+		"country": ""
+	},
+	{
+		"siteId": "2",
+		"locale_id": "1",
+		"language": "EN",
+		"country": "UNITED STATES"
+	},
+	{
+		"siteId": "3",
+		"locale_id": "1",
+		"language": "EN",
+		"country": "UNITED STATES"
+	},
+	{
+		"siteId": "4",
+		"locale_id": "1",
+		"language": "EN",
+		"country": "UNITED STATES"
+	},
+	{
+		"siteId": "5",
+		"locale_id": "1",
+		"language": "EN",
+		"country": "UNITED STATES"
+	},
+	{
+		"siteId": "5",
+		"locale_id": "5",
+		"language": "ZH",
+		"country": "China"
+	},
+	{
+		"siteId": "7",
+		"locale_id": "1",
+		"language": "EN",
+		"country": "UNITED STATES"
+	},
+	{
+		"siteId": "8",
+		"locale_id": "1",
+		"language": "EN",
+		"country": "UNITED STATES"
+	},
+	{
+		"siteId": "10",
+		"locale_id": "1",
+		"language": "EN",
+		"country": "UNITED STATES"
+	},
+	{
+		"siteId": "10",
+		"locale_id": "2",
+		"language": "EN",
+		"country": "UNITED KINGDOM"
+	},
+	{
+		"siteId": "11",
+		"locale_id": "1",
+		"language": "EN",
+		"country": "UNITED STATES"
+	},
+	{
+		"siteId": "11",
+		"locale_id": "1",
+		"language": "EN",
+		"country": "UNITED STATES"
+	},
+	{
+		"siteId": "12",
+		"locale_id": "1",
+		"language": "EN",
+		"country": "UNITED STATES"
+	},
+	{
+		"siteId": "12",
+		"locale_id": "3",
+		"language": "EN",
+		"country": "AUSTRALIA"
+	},
+	{
+		"siteId": "13",
+		"locale_id": "1",
+		"language": "EN",
+		"country": "UNITED STATES"
+	},
+	{
+		"siteId": "13",
+		"locale_id": "50",
+		"language": "EN",
+		"country": ""
+	},
+	{
+		"siteId": "14",
+		"locale_id": "2",
+		"language": "EN",
+		"country": "UNITED KINGDOM"
+	},
+	{
+		"siteId": "15",
+		"locale_id": "50",
+		"language": "EN",
+		"country": ""
+	},
+	{
+		"siteId": "16",
+		"locale_id": "1",
+		"language": "EN",
+		"country": "UNITED STATES"
+	},
+	{
+		"siteId": "17",
+		"locale_id": "1",
+		"language": "EN",
+		"country": "UNITED STATES"
+	},
+	{
+		"siteId": "18",
+		"locale_id": "1",
+		"language": "EN",
+		"country": "UNITED STATES"
+	},
+	{
+		"siteId": "19",
+		"locale_id": "1",
+		"language": "EN",
+		"country": "UNITED STATES"
+	},
+	{
+		"siteId": "20",
+		"locale_id": "1",
+		"language": "EN",
+		"country": "UNITED STATES"
+	},
+	{
+		"siteId": "1",
+		"locale_id": "1",
+		"language": "1",
+		"country": "ENGLISH"
+	},
+	{
+		"siteId": "1",
+		"locale_id": "50",
+		"language": "1",
+		"country": "ENGLISH"
+	},
+	{
+		"siteId": "2",
+		"locale_id": "1",
+		"language": "1",
+		"country": "ENGLISH"
+	},
+	{
+		"siteId": "3",
+		"locale_id": "1",
+		"language": "1",
+		"country": "ENGLISH"
+	},
+	{
+		"siteId": "4",
+		"locale_id": "1",
+		"language": "1",
+		"country": "ENGLISH"
+	},
+	{
+		"siteId": "5",
+		"locale_id": "1",
+		"language": "1",
+		"country": "ENGLISH"
+	},
+	{
+		"siteId": "5",
+		"locale_id": "5",
+		"language": "2",
+		"country": "CHINESE"
+	},
+	{
+		"siteId": "7",
+		"locale_id": "1",
+		"language": "1",
+		"country": "ENGLISH"
+	},
+	{
+		"siteId": "8",
+		"locale_id": "1",
+		"language": "1",
+		"country": "ENGLISH"
+	},
+	{
+		"siteId": "10",
+		"locale_id": "1",
+		"language": "1",
+		"country": "ENGLISH"
+	},
+	{
+		"siteId": "10",
+		"locale_id": "2",
+		"language": "1",
+		"country": "ENGLISH"
+	},
+	{
+		"siteId": "11",
+		"locale_id": "1",
+		"language": "1",
+		"country": "ENGLISH"
+	},
+	{
+		"siteId": "11",
+		"locale_id": "1",
+		"language": "1",
+		"country": "ENGLISH"
+	},
+	{
+		"siteId": "12",
+		"locale_id": "1",
+		"language": "1",
+		"country": "ENGLISH"
+	},
+	{
+		"siteId": "12",
+		"locale_id": "3",
+		"language": "1",
+		"country": "ENGLISH"
+	},
+	{
+		"siteId": "13",
+		"locale_id": "1",
+		"language": "1",
+		"country": "ENGLISH"
+	},
+	{
+		"siteId": "13",
+		"locale_id": "50",
+		"language": "1",
+		"country": "ENGLISH"
+	},
+	{
+		"siteId": "14",
+		"locale_id": "2",
+		"language": "1",
+		"country": "ENGLISH"
+	},
+	{
+		"siteId": "15",
+		"locale_id": "50",
+		"language": "1",
+		"country": "ENGLISH"
+	},
+	{
+		"siteId": "16",
+		"locale_id": "1",
+		"language": "1",
+		"country": "ENGLISH"
+	},
+	{
+		"siteId": "17",
+		"locale_id": "1",
+		"language": "1",
+		"country": "ENGLISH"
+	},
+	{
+		"siteId": "18",
+		"locale_id": "1",
+		"language": "1",
+		"country": "ENGLISH"
+	},
+	{
+		"siteId": "19",
+		"locale_id": "1",
+		"language": "1",
+		"country": "ENGLISH"
+	},
+	{
+		"siteId": "20",
+		"locale_id": "1",
+		"language": "1",
+		"country": "ENGLISH"
+	}
+    ]
+  }
+						 
+						 
+				    ]]>
+			</value>
+		</entry>
+		<entry key="testCobrandProdData">
+			<value>
+				<![CDATA[
+						 {
+    "test":[{
+		"cobrandId": "4",
+		"productCatalogId": "3"
+	},
+	{
+		"cobrandId": "4",
+		"productCatalogId": "1"
+	},
+	{
+		"cobrandId": "4",
+		"productCatalogId": "5"
+	},
+	{
+		"cobrandId": "4",
+		"productCatalogId": "6"
+	},
+	{
+		"cobrandId": "4",
+		"productCatalogId": "8"
+	},
+	{
+		"cobrandId": "4",
+		"productCatalogId": "9"
+	},
+	{
+		"cobrandId": "2",
+		"productCatalogId": "6"
+	},
+	{
+		"cobrandId": "3",
+		"productCatalogId": "9"
+	},
+	{
+		"cobrandId": "3",
+		"productCatalogId": "8"
+	},
+	{
+		"cobrandId": "3",
+		"productCatalogId": "6"
+	},
+	{
+		"cobrandId": "3",
+		"productCatalogId": "5"
+	},
+	{
+		"cobrandId": "3",
+		"productCatalogId": "1"
+	},
+	{
+		"cobrandId": "3",
+		"productCatalogId": "3"
+	},
+	{
+		"cobrandId": "2",
+		"productCatalogId": "1"
+	},
+	{
+		"cobrandId": "2",
+		"productCatalogId": "3"
+	},
+	{
+		"cobrandId": "2",
+		"productCatalogId": "11"
+	},
+	{
+		"cobrandId": "2",
+		"productCatalogId": "1"
+	},
+	{
+		"cobrandId": "5",
+		"productCatalogId": "1"
+	},
+	{
+		"cobrandId": "5",
+		"productCatalogId": "3"
+	},
+	{
+		"cobrandId": "5",
+		"productCatalogId": "9"
+	},
+	{
+		"cobrandId": "5",
+		"productCatalogId": "13"
+	},
+	{
+		"cobrandId": "5",
+		"productCatalogId": "2"
+	},
+	{
+		"cobrandId": "5",
+		"productCatalogId": "6"
+	},
+	{
+		"cobrandId": "5",
+		"productCatalogId": "8"
+	},
+	{
+		"cobrandId": "5",
+		"productCatalogId": "10"
+	},
+	{
+		"cobrandId": "5",
+		"productCatalogId": "12"
+	}
+    
+    ]
+  }
+						 
+						 
+				    ]]>
+			</value>
+		</entry>
+		<entry key="testDisabledContainerData">
+			<value>
+				<![CDATA[
+						 {
+    "test":[
+    {
+		"cobrandId": "2",
+		"containers": "stocks"
+	},
+	{
+		"cobrandId": "5",
+		"containers": ""
+	},
+	{
+		"cobrandId": "8",
+		"containers": ""
+	},
+	{
+		"cobrandId": "3",
+		"containers": ""
+	},
+	{
+		"cobrandId": "15",
+		"containers": ""
+	},
+	{
+		"cobrandId": "12",
+		"containers": ""
+	},
+	{
+		"cobrandId": "19",
+		"containers": ""
+	},
+	{
+		"cobrandId": "10",
+		"containers": ""
+	},
+	{
+		"cobrandId": "17",
+		"containers": ""
+	},
+	{
+		"cobrandId": "18",
+		"containers": ""
+	},
+	{
+		"cobrandId": "7",
+		"containers": ""
+	},
+	{
+		"cobrandId": "4",
+		"containers": ""
+	},
+	{
+		"cobrandId": "14",
+		"containers": ""
+	},
+	{
+		"cobrandId": "16",
+		"containers": ""
+	},
+	{
+		"cobrandId": "13",
+		"containers": ""
+	},
+	{
+		"cobrandId": "1"
+	},
+	{
+		"cobrandId": "11"
+	}
+    ]
+  }
+						 
+						 
+				    ]]>
+			</value>
+		</entry>
+		<entry key="testTagData">
+			<value>
+				<![CDATA[
+						 {
+    "test":[
+    	{
+		"tagId": "92",
+		"tagName": "prepay"
+	},
+	{
+		"tagId": "2",
+		"tagName": "minutes"
+	},
+	{
+		"tagId": "5",
+		"tagName": "bank"
+	},
+	{
+		"tagId": "10",
+		"tagName": "telephone"
+	},
+	{
+		"tagId": "12",
+		"tagName": "stocks"
+	},
+	{
+		"tagId": "13",
+		"tagName": "miles"
+	},
+	{
+		"tagId": "17",
+		"tagName": "bills"
+	},
+	{
+		"tagId": "21",
+		"tagName": "loans"
+	},
+	{
+		"tagId": "22",
+		"tagName": "mortgage"
+	},
+	{
+		"tagId": "65",
+		"tagName": "bill_payment"
+	},
+	{
+		"tagId": "82",
+		"tagName": "custom"
+	},
+	{
+		"tagId": "84",
+		"tagName": "insurance"
+	},
+	{
+		"tagId": "86",
+		"tagName": "currency_exchange_rate"
+	},
+	{
+		"tagId": "87",
+		"tagName": "utilities"
+	},
+	{
+		"tagId": "89",
+		"tagName": "other_assets"
+	},
+	{
+		"tagId": "90",
+		"tagName": "other_liabilities"
+	},
+	{
+		"tagId": "91",
+		"tagName": "isp"
+	},
+	{
+		"tagId": "94",
+		"tagName": "RealEstate"
+	}
+    ]
+  }
+						 
+						 
+				    ]]>
+			</value>
+		</entry>
+		
+		<entry key="testSRDBData">
+			<value>
+				<![CDATA[
+						 {
+    "test":[
+    	{
+		"product_catalog_id": "3",
+		"tag": "bank,stocks,credits,loans,mortgage,insurance,minutes,bills,utilities,telephone,cable_satellite,isp,investment,loan,bill"
+	},
+	{
+		"product_catalog_id": "8",
+		"tag": "bill_payment"
+	},
+	{
+		"product_catalog_id": "11",
+		"tag": "bank,news,auction,orders,apt_rental"
+	},
+	{
+		"product_catalog_id": "4",
+		"tag": "bank,stocks,investment"
+	},
+	{
+		"product_catalog_id": "5",
+		"tag": "bank,stocks,credits,loans,mortgage,insurance,minutes,bills,utilities,telephone,cable_satellite,isp,creditCard,loan,bill,investment"
+	},
+	{
+		"product_catalog_id": "1",
+		"tag": "bank,stocks,credits,loans,mortgage,creditCard,loan,bill,investment"
+	}
+    ]
+  }
+						 
+						 
+				    ]]>
+			</value>
+		</entry>		
+		
+	</util:map>
+</beans>
